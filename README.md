@@ -35,7 +35,7 @@ Screen recording includes:
 - Killing API pod → auto‑regeneration.
 - Killing DB pod → auto‑regeneration with persistent data intact.
 - Demonstration of deployments, self‑healing, persistence, rolling updates, and HPA scaling.
-- FinOps considerations (resource justification, efficient scaling).
+- FinOps considerations (resource justification, efficient scaling, Single DB replica with persistence, Self‑healing deployments).
 
 [Link to Demo Video]
 

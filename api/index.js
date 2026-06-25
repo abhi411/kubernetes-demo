@@ -3,8 +3,6 @@ const { Pool } = require('pg');
 const app = express();
 const port = process.env.PORT || 3000;
 
-console.log("env ", process.env)
-// following environment variables are not resolving correctly in kubernetes
 const pool = new Pool({
   host: process.env.DB_HOST,
   user:  process.env.DB_USER,
@@ -19,7 +17,7 @@ app.get('/data', async (req, res) => {
 });
 
 app.get('/', async (req, res) => {
-  res.send("Test");
+  res.send("Response");
 });
 
 app.listen(port, () => console.log(`API running on ${port}`));
